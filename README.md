@@ -1,5 +1,7 @@
 # beacon-android-sdk
-Beacon library for adHawk implementations on Android
+Beacon library for adHawk implementations on Android.
+
+This purpose of this library is to effeciently monitor and relay beacon information to apps wishing to integrate with the RevelDigital platform. Beacon information is delivered via broadcast to any listening ```BroadcastReceiver``` registered to an application. Once the libary is initialized the app will begin to receive various broadcasts when in the vicinity of a beacon registered on the RevelDigital platform.
 
 # Requirements
 
@@ -16,3 +18,53 @@ Beacon library for adHawk implementations on Android
   * play-services-location-7.0.0 ```compile 'com.google.android.gms:play-services-location:7.0.0'```
   * reveldigital-api-1.4.4 ```compile 'com.reveldigital:reveldigital-api:1.4.4'```
   * playerapi-1.0-SNAPSHOT ```request access by emailing support@reveldigital.com```
+
+# Usage
+
+## To start
+
+```
+try {
+  RevelBeacon revelBeacon = new RevelBeacon.Builder(this).startOnBoot(true).build();
+  revelBeacon.connect();
+} catch (RevelBeacon.MalformedRevelBeaconException e) {
+  e.printStackTrace();
+}
+```
+
+## To stop
+
+```
+revelBeacon.disconnect();
+```
+
+## How to receive beacon data
+
+Register a ```BroadcastReceiver``` either manually or via an ```intent-filter``` in your ```AndroidManifest.xml```
+
+An example of intent-filter:
+
+```
+<intent-filter>
+  <action android:name="com.reveldigital.adhawk.lib.action.BEACON_FOUND"/>
+</intent-filter>
+<intent-filter>
+  <action android:name="com.reveldigital.adhawk.lib.action.BEACON_EXPIRED"/>
+</intent-filter>
+```
+
+Extract the beacon data from the broadcast intent:
+
+```
+if (intent.getAction().equals(BEACON_FOUND_ACTION)) {
+  Bundle extras = intent.getExtras();
+  Bundle b = extras.getBundle(BEACON_BUNDLE);
+  b.setClassLoader(Beacon.class.getClassLoader()); // for cross process applications
+  Beacon beacon = b.getParcelable(BEACON_DETECTED_BEACON);
+}
+```
+
+The two actions containing beacon data include
+  * ```BEACON_EXPIRED_ACTION```
+  * ```BEACON_FOUND_ACTION```
+  
