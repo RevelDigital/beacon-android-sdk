@@ -25,9 +25,9 @@ This purpose of this library is to effeciently monitor and relay beacon informat
 
 ```
 try {
-  RevelBeacon revelBeacon = new RevelBeacon.Builder(this).startOnBoot(true).build();
-  revelBeacon.connect();
-} catch (RevelBeacon.MalformedRevelBeaconException e) {
+  BeaconClient beaconClient = new BeaconClient.Builder(this).startOnBoot(true).build();
+  beaconClient.connect();
+} catch (BeaconClient.MalformedRevelBeaconException e) {
   e.printStackTrace();
 }
 ```
@@ -35,7 +35,7 @@ try {
 ## To stop
 
 ```
-revelBeacon.disconnect();
+beaconClient.disconnect();
 ```
 
 ## How to receive beacon data
