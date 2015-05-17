@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Beacon Library Demo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- YOUR AUTH KEY HERE -->
+    <string name="rd_beacon_sdk_auth_key">qwerty</string>
+</resources>
