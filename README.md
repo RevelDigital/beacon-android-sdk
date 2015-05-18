@@ -79,3 +79,7 @@ The auth key must be included in your ```strings.xml``` resource file using the 
 ```
 
 To request your key please email info@reveldigital.com with your company and contact details.
+
+# Documentation
+
+Please refer to the Javadoc found here: http://developer.reveldigital.com/gen/playerapi
