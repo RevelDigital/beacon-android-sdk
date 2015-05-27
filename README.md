@@ -1,15 +1,15 @@
 # beacon-android-sdk
 Beacon library for adHawk implementations on Android.
 
-This purpose of this library is to effeciently monitor and relay beacon information to apps wishing to integrate with the RevelDigital platform. Beacon information is delivered via broadcast to any listening ```BroadcastReceiver``` registered to an application. Once the libary is initialized the app will begin to receive various broadcasts when in the vicinity of a beacon registered on the RevelDigital platform.
+This purpose of this library is to efficiently monitor and relay beacon information to apps wishing to integrate with the RevelDigital platform. Beacon information is delivered via broadcast to any listening ```BroadcastReceiver``` registered to an application. Once the libary has been initialized the app will begin receiving various broadcasts when in the vicinity of beacons registered on the RevelDigital platform. The beacon broadcasts will include not only the beacon device information, but also references to the media and any other scheduled content assigned to a specific beacon. All communication with the RevelDigital platform is handled by the library including device monitoring, analytics, user profile syncronization, and content scheduling.
 
 # Dependencies
 
   * bson4jackson-2.4.0 ```compile 'de.undercouch:bson4jackson:2.4.0'```
   * gson-2.3.1 ```compile 'com.google.code.gson:gson:2.3.1'```
-  * okio-1.3.0 ```compile 'com.squareup.okio:okio:1.3.0'```
-  * okhttp-urlconnection-2.3.0 ```compile 'com.squareup.okhttp:okhttp-urlconnection:2.3.0'```
-  * okhttp-2.3.0 ```compile 'com.squareup.okhttp:okhttp:2.3.0'```
+  * okio-1.4.0 ```compile 'com.squareup.okio:okio:1.4.0'```
+  * okhttp-urlconnection-2.4.0 ```compile 'com.squareup.okhttp:okhttp-urlconnection:2.4.0'```
+  * okhttp-2.4.0 ```compile 'com.squareup.okhttp:okhttp:2.3.0'```
   * retrofit-1.9.0 ```compile 'com.squareup.retrofit:retrofit:1.9.0'```
   * support-v4-22.0.0 ```compile 'com.android.support:support-v4:22.1.1'```
   * joda-time-2.7 ```compile 'joda-time:joda-time:2.7'```
@@ -42,7 +42,14 @@ beaconClient.disconnect();
 
 Register a ```BroadcastReceiver``` either manually or via an ```intent-filter``` in your ```AndroidManifest.xml```
 
-An example of intent-filter:
+An example of manual broadcast registration:
+
+```
+IntentFilter intentFound = new IntentFilter(IConstants.ACTION_BEACON_FOUND);
+registerReceiver(myReceiver, intentFound);
+```
+
+An example of intent-filter in AndroidManifest.xml:
 
 ```
 <intent-filter>
