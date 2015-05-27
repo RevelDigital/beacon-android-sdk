@@ -45,7 +45,7 @@ Register a ```BroadcastReceiver``` either manually or via an ```intent-filter```
 An example of manual broadcast registration:
 
 ```
-IntentFilter intentFound = new IntentFilter(IConstants.ACTION_BEACON_FOUND);
+IntentFilter intentFound = new IntentFilter(ACTION_BEACON_FOUND);
 registerReceiver(myReceiver, intentFound);
 ```
 
