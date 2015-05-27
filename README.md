@@ -89,4 +89,4 @@ To request your key please email info@reveldigital.com with your company and con
 
 # Documentation
 
-Please refer to the Javadoc found here: http://developer.reveldigital.com/gen/playerapi
+Please refer to the Javadoc found here: http://developer.reveldigital.com/gen/beaconsdk
