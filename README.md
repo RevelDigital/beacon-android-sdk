@@ -5,19 +5,35 @@ This purpose of this library is to efficiently monitor and relay beacon informat
 
 # Dependencies
 
-  * bson4jackson-2.4.0 ```compile 'de.undercouch:bson4jackson:2.4.0'```
   * gson-2.3.1 ```compile 'com.google.code.gson:gson:2.3.1'```
-  * okio-1.4.0 ```compile 'com.squareup.okio:okio:1.4.0'```
-  * okhttp-urlconnection-2.4.0 ```compile 'com.squareup.okhttp:okhttp-urlconnection:2.4.0'```
-  * okhttp-2.4.0 ```compile 'com.squareup.okhttp:okhttp:2.3.0'```
+  * okio-1.6.0 ```compile 'com.squareup.okio:okio:1.4.0'```
+  * okhttp-urlconnection-2.5.0 ```compile 'com.squareup.okhttp:okhttp-urlconnection:2.4.0'```
+  * okhttp-2.5.0 ```compile 'com.squareup.okhttp:okhttp:2.3.0'```
   * retrofit-1.9.0 ```compile 'com.squareup.retrofit:retrofit:1.9.0'```
   * support-v4-22.0.0 ```compile 'com.android.support:support-v4:22.1.1'```
-  * joda-time-2.7 ```compile 'joda-time:joda-time:2.7'```
+  * joda-time-2.8.2 ```compile 'joda-time:joda-time:2.8.2'```
   * play-services-base-7.0.0 ```compile 'com.google.android.gms:play-services-base:7.0.0'```
   * play-services-maps-7.0.0 ```compile 'com.google.android.gms:play-services-maps:7.0.0'```
   * play-services-location-7.0.0 ```compile 'com.google.android.gms:play-services-location:7.0.0'```
-  * reveldigital-api-1.4.4 ```compile 'com.reveldigital:reveldigital-api:1.4.4'```
+  * reveldigital-api-1.4.5 ```compile 'com.reveldigital:reveldigital-api:1.4.5'```
   * playerapi-1.0-SNAPSHOT ```request access by emailing support@reveldigital.com```
+
+# Download
+
+Android libraries are available in the lib folder, or via Maven:
+
+Download [the latest snapshot][snap] or grab via Maven:
+```xml
+<dependency>
+  <groupId>com.reveldigital.adhawk</groupId>
+  <artifactId>beacon-android-sdk</artifactId>
+  <version>1.0-SNAPSHOT</version>
+</dependency>
+```
+or Gradle:
+```groovy
+compile 'com.reveldigital.adhawk:beacon-android-sdk:1.0-SNAPSHOT'
+```
 
 # Usage
 
@@ -90,3 +106,6 @@ To request your key please email info@reveldigital.com with your company and con
 # Documentation
 
 Please refer to the Javadoc found here: http://developer.reveldigital.com/gen/beaconsdk
+
+
+[snap]: https://oss.sonatype.org/content/repositories/snapshots/com/reveldigital/adhawk/beacon-android-sdk/
