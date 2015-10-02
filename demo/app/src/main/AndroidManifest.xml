@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.reveldigital.beaconlibrarydemo" >
+    package="com.reveldigital.beaconlibrarydemo"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -22,5 +23,7 @@
                 <action android:name="com.reveldigital.adhawk.lib.action.BEACON_EXPIRED"/>
             </intent-filter>
         </receiver>
+        <!-- YOUR AUTH KEY HERE -->
+
     </application>
 </manifest>

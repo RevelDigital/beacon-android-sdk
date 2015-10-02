@@ -1,10 +1,13 @@
 apply plugin: 'com.android.application'
 apply plugin: 'android'
 
+repositories {
+    mavenCentral()
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+    maven { url 'http://nexus.reveldigital.com/nexus/content/repositories/snapshots/' }
+}
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile(name:'lib-release', ext:'aar')
     compile 'com.android.support:appcompat-v7:22.0.0'
     compile 'de.undercouch:bson4jackson:2.4.0'
     compile 'com.google.code.gson:gson:2.3.1'
@@ -18,6 +21,7 @@ dependencies {
     compile 'com.google.android.gms:play-services-maps:7.0.0'
     compile 'com.google.android.gms:play-services-location:7.0.0'
     compile 'com.reveldigital.playerapi:playerapi:1.0-SNAPSHOT'
+    compile 'com.reveldigital.adhawk:beacon-android-sdk:1.0-SNAPSHOT'
 }
 
 android {
@@ -50,17 +54,9 @@ android {
         exclude 'META-INF/dependencies.txt'
         exclude 'META-INF/LGPL2.1'
     }
+
 }
 
-repositories {
-    mavenCentral()
-    maven {
-        url 'http://nexus.reveldigital.com/nexus/content/repositories/snapshots/'
-    }
-    flatDir {
-        dirs 'libs'
-    }
-}
 
 
 

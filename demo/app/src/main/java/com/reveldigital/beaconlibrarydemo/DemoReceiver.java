@@ -5,8 +5,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
-import com.reveldigital.adhawk.lib.Beacon;
+
 import com.reveldigital.adhawk.lib.IConstants;
+import com.reveldigital.adhawk.lib.Beacon;
 
 /**
  * Receives broadcasts for actions defined in the manifest.
