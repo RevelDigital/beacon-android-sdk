@@ -24,6 +24,9 @@
             </intent-filter>
         </receiver>
         <!-- YOUR AUTH KEY HERE -->
-
+        <meta-data
+            tools:replace="android:value"
+            android:name="com.reveldigital.adhawk.API_KEY"
+            android:value="YOUR_KEY_HERE"/>
     </application>
 </manifest>
