@@ -12,10 +12,10 @@ This purpose of this library is to efficiently monitor and relay beacon informat
   * retrofit-1.9.0 ```compile 'com.squareup.retrofit:retrofit:1.9.0'```
   * support-v4-22.0.0 ```compile 'com.android.support:support-v4:22.1.1'```
   * joda-time-2.8.2 ```compile 'joda-time:joda-time:2.8.2'```
-  * play-services-base-7.0.0 ```compile 'com.google.android.gms:play-services-base:7.0.0'```
-  * play-services-maps-7.0.0 ```compile 'com.google.android.gms:play-services-maps:7.0.0'```
-  * play-services-location-7.0.0 ```compile 'com.google.android.gms:play-services-location:7.0.0'```
-  * reveldigital-api-1.4.5 ```compile 'com.reveldigital:reveldigital-api:1.4.5'```
+  * play-services-base-8.3.0 ```compile 'com.google.android.gms:play-services-base:8.3.0'```
+  * play-services-maps-8.3.0 ```compile 'com.google.android.gms:play-services-maps:8.3.0'```
+  * play-services-location-8.3.0 ```compile 'com.google.android.gms:play-services-location:8.3.0'```
+  * reveldigital-api-1.4.5 ```compile 'com.reveldigital:reveldigital-api:1.4.6'```
   * playerapi-1.0-SNAPSHOT ```request access by emailing support@reveldigital.com```
 
 # Download
