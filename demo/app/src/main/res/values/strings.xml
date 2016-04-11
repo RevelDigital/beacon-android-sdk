@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Beacon Demo</string>
+    <string name="beacon_sdk_auth_key"><!-- Enter your RevelDigital beacon API key here --></string>
+</resources>
