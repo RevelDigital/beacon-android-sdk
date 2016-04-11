@@ -5,17 +5,17 @@ This purpose of this library is to efficiently monitor and relay beacon informat
 
 # Dependencies
 
-  * gson-2.3.1 ```compile 'com.google.code.gson:gson:2.3.1'```
+  * gson-2.6.2 ```compile 'com.google.code.gson:gson:2.6.2'```
   * okio-1.6.0 ```compile 'com.squareup.okio:okio:1.4.0'```
-  * okhttp-urlconnection-2.5.0 ```compile 'com.squareup.okhttp:okhttp-urlconnection:2.4.0'```
-  * okhttp-2.5.0 ```compile 'com.squareup.okhttp:okhttp:2.3.0'```
+  * okhttp-urlconnection-2.7.0 ```compile 'com.squareup.okhttp:okhttp-urlconnection:2.7.0'```
+  * okhttp-2.7.0 ```compile 'com.squareup.okhttp:okhttp:2.7.0'```
   * retrofit-1.9.0 ```compile 'com.squareup.retrofit:retrofit:1.9.0'```
   * support-v4-22.0.0 ```compile 'com.android.support:support-v4:22.1.1'```
   * joda-time-2.8.2 ```compile 'joda-time:joda-time:2.8.2'```
-  * play-services-base-8.3.0 ```compile 'com.google.android.gms:play-services-base:8.3.0'```
-  * play-services-maps-8.3.0 ```compile 'com.google.android.gms:play-services-maps:8.3.0'```
-  * play-services-location-8.3.0 ```compile 'com.google.android.gms:play-services-location:8.3.0'```
-  * reveldigital-api-1.4.5 ```compile 'com.reveldigital:reveldigital-api:1.4.6'```
+  * play-services-base-8.4.0 ```compile 'com.google.android.gms:play-services-base:8.4.0'```
+  * play-services-maps-8.4.0 ```compile 'com.google.android.gms:play-services-maps:8.4.0'```
+  * play-services-location-8.4.0 ```compile 'com.google.android.gms:play-services-location:8.4.0'```
+  * reveldigital-api-1.4.6 ```compile 'com.reveldigital:reveldigital-api:1.4.6'```
   * playerapi-1.0-SNAPSHOT ```request access by emailing support@reveldigital.com```
 
 # Download
