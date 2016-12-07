@@ -1,5 +1,5 @@
 # beacon-android-sdk
-Beacon library for adHawk implementations on Android.
+Android library for integration with the RevelDigital platform for beacons
 
 This purpose of this library is to efficiently monitor and relay beacon information to apps wishing to integrate with the RevelDigital platform. Beacon information is delivered via broadcast to any listening ```BroadcastReceiver``` registered to an application. Once the libary has been initialized the app will begin receiving various broadcasts when in the vicinity of beacons registered on the RevelDigital platform. The beacon broadcasts will include not only the beacon device information, but also references to the media and any other scheduled content assigned to a specific beacon. All communication with the RevelDigital platform is handled by the library including device monitoring, analytics, user profile syncronization, and content scheduling.
 
